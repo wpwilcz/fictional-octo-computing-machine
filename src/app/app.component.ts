@@ -12,6 +12,8 @@ export class AppComponent {
     111, 222, 333
   ];
 
+  prefix = ['x', 'y', 123];
+
   onSubmit() {
     console.log(this.form);
   }
