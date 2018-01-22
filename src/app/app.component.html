@@ -14,8 +14,11 @@
     name="select">
   </select>
   <button type="submit" [disabled]="f.invalid">aaaa</button>
-  <a routerLink="/">zzz</a>
-  <a *ngFor="let path of paths" [routerLink]="['aaa', 'bbb', path]">aaa<br></a>
-  <a *ngFor="let path of paths" [routerLink]="prefix.concat([path])">fullPath<br></a>
   <router-outlet></router-outlet>
 </form>
+
+<input
+  [owlDateTime]="dt1"
+  [owlDateTimeTrigger]="dt1"
+  placeholder="Date Time"
+><owl-date-time #dt1></owl-date-time>
